@@ -127,7 +127,7 @@ def run_test(fname, nframes, Ndim_in, Ndim_out, nnets, nepochs, nruns, ntrains):
     train_output_mean   = rescaleOutputs(train_output_mean, train_data_size, mx-mn, mn, Alow, Ahigh)
     valid_output_mean   = rescaleOutputs(valid_output_mean, valid_data_size, mx-mn, mn, Alow, Ahigh)
 
-    fid = open("data/training.csv", 'w')
+    fid = open("training.csv", 'w')
     for i in range(train_data_size):
         print >> fid, \
                  y[i][0], ",", \
@@ -135,7 +135,7 @@ def run_test(fname, nframes, Ndim_in, Ndim_out, nnets, nepochs, nruns, ntrains):
 
     fid.close()
 
-    fid = open("data/valid.csv", 'w')
+    fid = open("valid.csv", 'w')
     for i in range(valid_data_size):
         print >> fid, \
                  y1[i][0], ",", \
