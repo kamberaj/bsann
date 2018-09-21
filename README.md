@@ -29,5 +29,8 @@ Bootstrapping Swarm Neural Network
 #  ............................................................................
 #  x[tNframes,1], x[tNframes,2], ...., x[tNframes,Ndim_in], y[tNframes,1] y[tNframes,2], ...., y[tNframes,Ndim_out]
 #
-
-"""
+# x are the inputs and y are the outputs.
+# ntrains = number of local training data - global number of training data is Ntrains = ntrains * nnets
+# nnets   = number of neural networks
+# nepochs = number of iterations for each neural networks
+# nruns   = number of runs
